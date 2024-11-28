@@ -24,7 +24,7 @@ const navLinksArray = [
     },
     {
         id: 3,
-        path: '/clientes',
+        path: '/categorias',
         icon: <MdOutlineCategory size={25} />,
         title: 'Categorías'
     },
@@ -72,7 +72,7 @@ export const NavLinks = () => {
                 </ul>
                 <hr className="my-6" />
                 <div className="flex flex-col gap-y-4">
-                    <span className="text-sm text-slate-400">Config</span>
+                    <span className="text-sm text-slate-400">Configuraciones</span>
                     <Link href={'/ajustes'} title="Ajustes" className={`flex items-center gap-x-2 rounded p-2 text-base hover:bg-gray-200 transition-colors duration-300 ${pathname === 'ajustes' ? 'bg-blue-800 text-slate-100 hover:bg-blue-600' : 'bg-inherit hover:bg-gray-200'}`}>
                         <IoSettingsOutline size={25} />
                         <span>Ajustes</span>
@@ -83,12 +83,6 @@ export const NavLinks = () => {
                     </Link>
                 </div>
             </nav>
-            <div className="flex h-full items-end">
-                <button type="button" className="flex items-center gap-x-2 p-2 text-base" title="cerrar sesión">
-                    <CiLogout size={25} />
-                    <span>Cerrar sesión</span>
-                </button>
-            </div>
         </div>
 
 

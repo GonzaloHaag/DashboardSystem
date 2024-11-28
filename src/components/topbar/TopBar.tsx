@@ -2,7 +2,7 @@ import Image from "next/image";
 import { FaAngleDown, FaRegBell } from "react-icons/fa";
 export const TopBar = () => {
     return (
-        <header className="min-h-20 flex items-center justify-between px-8 border-b border-b-slate-200">
+        <header className="min-h-20 flex items-center justify-between px-10 border-b border-b-slate-200">
             <h1 className="font-medium text-2xl">Dashboard</h1>
             <div className="flex items-center gap-x-6">
                 <FaRegBell size={25} fill="#1e3a8a" />

@@ -4,7 +4,6 @@ import { signIn } from "@/auth.config";
 
 export const loginUser = async(email:string,password:string) => {
     try {
-
         await signIn('credentials',{
             redirect:false,
             email,

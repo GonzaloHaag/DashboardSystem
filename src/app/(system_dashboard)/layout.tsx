@@ -16,9 +16,9 @@ export default async function DashboardAndSystemLayout({
     return (
         <main className="flex min-h-dvh">
             <AsideBar />
-            <div className="flex flex-col w-full">
+            <div className="flex flex-col w-[calc(100%-15rem)]">
                 <TopBar />
-                <div className="px-8 py-4">
+                <div className="px-10 py-4">
                     {children}
                 </div>
             </div>

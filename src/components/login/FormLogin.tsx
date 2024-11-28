@@ -12,7 +12,7 @@ interface Login {
 }
 export const FormLogin = () => {
 
-    const { register, formState: { errors,isValid }, handleSubmit } = useForm<Login>();
+    const { register, formState: { errors,isValid,isSubmitting }, handleSubmit } = useForm<Login>();
 
     const formLoginSubmit = handleSubmit(async (data) => {
         if(isValid) {
@@ -66,8 +66,8 @@ export const FormLogin = () => {
                     )
                 }
             </div>
-            <button type="submit" className="w-full py-2 bg-blue-950 text-slate-100 rounded hover:bg-blue-950/90 transition-colors duration-200">
-                Ingresar
+            <button type="submit" disabled={isSubmitting} className="w-full py-2 bg-blue-950 text-slate-100 rounded hover:bg-blue-950/90 transition-colors duration-200">
+                { isSubmitting ? 'Ingresando...' : 'Ingresar' }
             </button>
         </form>
     )
